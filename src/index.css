@@ -5,22 +5,18 @@ html {
 }
 
 /* ===== Global Mobile Tap Fix ===== */
-@layer base {
-
-    a,
-    button,
-    [role="button"] {
-        @apply transition-all duration-200;
-    }
+a,
+button,
+[role="button"] {
+    -webkit-tap-highlight-color: transparent;
 }
 
-/* Mobile = apply hover effect on tap */
 @media (hover: none) {
 
     a:active,
     button:active,
     [role="button"]:active {
-        background-color: #c8a45d !important;
-        color: white !important;
+        transform: scale(0.96);
+        opacity: 0.85;
     }
 }
