@@ -5,16 +5,9 @@ html {
 }
 
 /* ===== Global Mobile Tap Fix ===== */
-@layer base {
-    button {
-        @apply active:scale-95 active:brightness-90 transition;
-    }
-
-    a {
-        @apply active:brightness-90 transition;
-    }
-
-    [role="button"] {
-        @apply active:scale-95 active:brightness-90 transition;
+@media (hover: none) {
+    *:hover {
+        color: inherit !important;
+        background: inherit !important;
     }
 }
