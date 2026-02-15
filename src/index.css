@@ -8,7 +8,8 @@ html {
 a,
 button,
 [role="button"] {
-    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
 }
 
 @media (hover: none) {
@@ -16,7 +17,7 @@ button,
     a:active,
     button:active,
     [role="button"]:active {
-        transform: scale(0.96);
-        opacity: 0.85;
+        transform: scale(0.95);
+        filter: brightness(0.85);
     }
 }
