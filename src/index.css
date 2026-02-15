@@ -5,9 +5,21 @@ html {
 }
 
 /* ===== Global Mobile Tap Fix ===== */
+@layer base {
+
+    a,
+    button,
+    [role="button"] {
+        @apply transition-all duration-200;
+    }
+}
+
+/* Mobile = apply hover effect on tap */
 @media (hover: none) {
-    *:hover {
-        color: inherit !important;
-        background: inherit !important;
+
+    a:active,
+    button:active,
+    [role="button"]:active {
+        @apply bg-[#c8a45d] text-white;
     }
 }
