@@ -20,8 +20,7 @@ html {
     a:active,
     button:active,
     [role="button"]:active {
-        background-color: #c8a45d;
-        color: white;
-        transition: all 0.2s ease;
+        background-color: #c8a45d !important;
+        color: white !important;
     }
 }
