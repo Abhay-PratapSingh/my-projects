@@ -20,6 +20,8 @@ html {
     a:active,
     button:active,
     [role="button"]:active {
-        @apply bg-[#c8a45d] text-white;
+        background-color: #c8a45d;
+        color: white;
+        transition: all 0.2s ease;
     }
 }
