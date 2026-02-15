@@ -3,3 +3,18 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* ===== Global Mobile Tap Fix ===== */
+@layer base {
+    button {
+        @apply active:scale-95 active:brightness-90 transition;
+    }
+
+    a {
+        @apply active:brightness-90 transition;
+    }
+
+    [role="button"] {
+        @apply active:scale-95 active:brightness-90 transition;
+    }
+}
